@@ -1,0 +1,53 @@
+:root {
+  /* Main theme colors from lightest to darkest */
+  --color-0: #f8fafa;
+  --color-0-5: #eef7f7;
+  --color-1: #e5efef;
+  --color-1-5: #dbe8e8;
+  --color-2: #d2e0e0;
+  --color-2-5: #c8d9d9;
+  --color-3: #bed1d1;
+  --color-3-5: #b5caca;
+  --color-4: #abc2c2;
+  --color-4-5: #a1bbbb;
+  --color-5: #98b3b3;
+  --color-5-5: #8eacac;
+  --color-6: #84a4a4;
+  --color-6-5: #7b9d9d;
+  --color-7: #719595;
+  --color-7-5: #678e8e;
+  --color-8: #5e8686;
+  --color-8-5: #547f7f;
+  --color-9: #4a7777;
+  --color-9-5: #417070;
+  --color-10: #376868;
+
+  /* Common usage variables */
+  --primary-color: var(--color-10);
+  --primary-light: var(--color-8);
+  --primary-dark: var(--color-9-5);
+  
+  --background-light: var(--color-0);
+  --background-medium: var(--color-1);
+  --background-dark: var(--color-2);
+  
+  --text-primary: var(--color-10);
+  --text-secondary: var(--color-8);
+  --text-light: var(--color-0);
+  
+  /* Hover states */
+  --hover-light: var(--color-1);
+  --hover-medium: var(--color-8);
+  --hover-dark: var(--color-9-5);
+  
+  /* Button colors */
+  --button-primary: var(--color-10);
+  --button-primary-hover: var(--color-9);
+  --button-secondary: var(--color-8);
+  --button-secondary-hover: var(--color-7);
+  
+  /* Border colors */
+  --border-light: var(--color-2);
+  --border-medium: var(--color-5);
+  --border-dark: var(--color-8);
+}
