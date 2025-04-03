@@ -5,7 +5,7 @@ import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa'
 const Teams = () => {
   const teamMembers = [
     {
-      name: 'Probin Bosnet',
+      name: 'Prabin Basnet',
       role: 'UI/UX Designer',
       image: '/team/member1.jpg',
       bio: 'Lorem ipsum dolor sit amet. Consectetur dolor chain tufte. RespDay',
@@ -17,7 +17,7 @@ const Teams = () => {
       }
     },
     {
-      name: 'Probin Bosnet',
+      name: 'Prabin Basnet',
       role: 'UI/UX Designer',
       image: '/team/member2.jpg',
       bio: 'Lorem ipsum dolor sit amet. Consectetur dolor chain tufte. RespDay',
@@ -29,7 +29,7 @@ const Teams = () => {
       }
     },
     {
-      name: 'Probin Bosnet',
+      name: 'Prabin Basnet',
       role: 'UI/UX Designer',
       image: '/team/member3.jpg',
       bio: 'Lorem ipsum dolor sit amet. Consectetur dolor chain tufte. RespDay',
@@ -41,7 +41,7 @@ const Teams = () => {
       }
     },
     {
-      name: 'Probin Bosnet',
+      name: 'Prabin Basnet',
       role: 'UI/UX Designer',
       image: '/team/member4.jpg',
       bio: 'Lorem ipsum dolor sit amet. Consectetur dolor chain tufte. RespDay',
