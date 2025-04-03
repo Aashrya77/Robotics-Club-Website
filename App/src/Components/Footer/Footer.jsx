@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 const Footer = () => {
-  const email = 'Techspireroboticscommunityclb@gmail.com'
+  const email = 'techspireroboticscommunityclub@gmail.com'
   
   const navLinks = [
     { name: 'Home', path: '/' },
