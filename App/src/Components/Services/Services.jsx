@@ -27,12 +27,12 @@ const Services = () => {
   ]
 
   const companies = [
-    '/companies/company1.png',
-    '/companies/company2.png',
-    '/companies/company3.png',
-    '/companies/company4.png',
-    '/companies/company5.png',
-    '/companies/company6.png'
+    '/esewaLogo.png',
+    '/codeHimalayaLogo.png',
+    '/esewaLogo.png',
+    '/codeHimalayaLogo.png',
+    '/esewaLogo.png',
+    '/codeHimalayaLogo.png'
   ]
 
   return (
