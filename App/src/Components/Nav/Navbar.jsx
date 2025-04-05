@@ -29,9 +29,10 @@ const Navbar = () => {
       <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <Link to='/' className='nav-item' onClick={toggleMenu}>Home</Link>
         <Link to='/event' className='nav-item' onClick={toggleMenu}>Event</Link>
-        <div className='nav-item dropdown'>
+        {/* <div className='nav-item dropdown'>
           <span>Our Teams</span>
-        </div>
+        </div> */}
+        <Link to='/teams' className='nav-item' onClick={toggleMenu}>Our Teams</Link>
         <Link to='/about' className='nav-item' onClick={toggleMenu}>About us</Link>
         <Link to='/membership' className='nav-item' onClick={toggleMenu}>Memberships</Link>
         <div className='nav-button mobile'>

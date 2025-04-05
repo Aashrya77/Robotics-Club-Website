@@ -4,19 +4,20 @@ import './Home.css'
 
 const Home = () => {
   return (
-    <div className='hero-section'>
-      <div className='hero-content'>
-        <h1 className='hero-title'>
-          To Survive in <span className='highlight'>Futuristic</span> World
+    <div className='home-hero'>
+      <div className='home-overlay'></div>
+      <div className='home-content'>
+        <h1 className='home-title'>
+          To Survive in <span className='home-highlight'>Futuristic</span> World
         </h1>
-        <h1 className='hero-subtitle'>Step Ahead.</h1>
-        <p className='hero-description'>
-          Time equips you to get started. Meta impact that's iterative, bringing ground only idea, object tech. Harvest. Figma
-          focus size big aid hit organic by one shower. Economy windows type consumption.
+        <h2 className='home-subtitle'>Step Ahead.</h2>
+        <p className='home-description'>
+          Office youth you must be project Meta impact that's iterative, bringing ground only value-added work Product design-
+          client tech like aid hit organic by one shower. Economy windows type consumption.
         </p>
-        <div className='hero-buttons'>
-          <Link to='/join' className='join-btn'>Join Now</Link>
-          <Link to='/events' className='explore-btn'>Explore Events</Link>
+        <div className='home-buttons'>
+          <Link to='/join' className='home-btn home-btn-primary'>Join Now</Link>
+          <Link to='/events' className='home-btn home-btn-secondary'>Explore Events</Link>
         </div>
       </div>
     </div>

@@ -7,6 +7,7 @@ import Events from './Components/Events/Events'
 import Gallery from './Components/Gallery/Gallery'
 import Footer from './Components/Footer/Footer'
 import Maintenance from './Components/Maintenance/Maintenance'
+import SinglePage from "./Components/Teams/SinglePage"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Gallery />
           </>
         } />
+        <Route path="/teams" element={<SinglePage />} />
         <Route path="*" element={<Maintenance />} />
       </Routes>
       <Footer />
