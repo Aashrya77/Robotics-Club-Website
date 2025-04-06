@@ -20,7 +20,7 @@
 .nav-logo {
   height: 60px;
   width: auto;
-  transition: transform 0.3s ease;
+  will-change: transform, opacity;
 }
 
 .nav-logo:hover {
@@ -62,6 +62,7 @@
   display: flex;
   gap: 2.5rem;
   align-items: center;
+  will-change: transform, opacity;
 }
 
 .nav-item {
@@ -69,6 +70,7 @@
   font-weight: 500;
   color: var(--primary-color);
   transition: color 0.3s ease;
+  will-change: transform;
 }
 
 .nav-item::after {
