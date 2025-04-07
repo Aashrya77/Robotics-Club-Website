@@ -73,12 +73,12 @@ const SinglePage = () => {
           <TeamCard key={team.id} {...team} />
         ))}
       </div>
-      <div className="stats-banner">
+      <div className="stats-grid">
         {stats.map((stat, index) => (
-          <div key={index} className="stat-item">
-            <span className="stat-icon">{stat.icon}</span>
-            <div className="stat-number">{stat.number}</div>
-            <div className="stat-label">{stat.label}</div>
+          <div key={index} className="stat-card">
+            <h3 style={{ fontSize: '1.5rem' }}>{stat.icon}</h3>
+            <h3>{stat.number}</h3>
+            <p>{stat.label}</p>
           </div>
         ))}
       </div>

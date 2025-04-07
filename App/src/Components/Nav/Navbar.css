@@ -17,6 +17,12 @@
   border-bottom: 1px solid rgba(55, 104, 104, 0.08);
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
 .nav-logo {
   height: 60px;
   width: auto;

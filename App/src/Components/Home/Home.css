@@ -3,8 +3,9 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 0 4rem;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 4rem;
   background: url('/robot-hand.jpg') center/cover no-repeat;
   overflow: hidden;
   perspective: 1000px;
@@ -26,10 +27,13 @@
   max-width: 800px;
   margin-top: 2rem;
   pointer-events: all;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .home-title {
-  font-size: 4.5rem;
+  font-size: 3.8rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 0.5rem;
@@ -52,8 +56,8 @@
 }
 
 .home-subtitle {
-  font-size: 4rem;
-  font-weight: 600;
+  font-size: 3.5rem;
+  font-weight: 700;
   margin-bottom: 1.5rem;
   color: #333;
   will-change: transform, opacity;
@@ -63,8 +67,7 @@
   font-size: 1.2rem;
   line-height: 1.8;
   color: #666;
-  margin-bottom: 2.5rem;
-  max-width: 600px;
+  max-width: 800px;
   will-change: transform, opacity;
 }
 

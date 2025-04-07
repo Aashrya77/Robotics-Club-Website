@@ -108,8 +108,8 @@ const Navbar = () => {
           <RiMenu3Line className='hamburger-icon' />
         )}
       </div>
-
-      <div className={`nav-links ${isMenuOpen ? 'active' : ''}`} ref={menuRef}>
+        <div className="nav-right">
+           <div className={`nav-links ${isMenuOpen ? 'active' : ''}`} ref={menuRef}>
         <Link to='/' className='nav-item' onClick={toggleMenu} ref={el => linksRef.current[0] = el}>Home</Link>
         <Link to='/event' className='nav-item' onClick={toggleMenu} ref={el => linksRef.current[1] = el}>Event</Link>
         <Link to='/teams' className='nav-item' onClick={toggleMenu} ref={el => linksRef.current[2] = el}>Our Teams</Link>
@@ -123,6 +123,8 @@ const Navbar = () => {
       <div className='nav-button desktop'>
         <Link to='/join' className='join-now'>Join Now</Link>
       </div>
+        </div>
+     
     </nav>
   )
 }

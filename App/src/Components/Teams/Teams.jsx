@@ -55,13 +55,16 @@ const Teams = () => {
   ]
 
   const stats = [
-    { number: '3+', label: 'Team Members' },
-    { number: '1+', label: 'Active Projects' },
-    { number: '4+', label: 'Competition Win' },
-    { number: '1+', label: 'Year Experience' }
-  ]
+    { icon: '👥', number: '3+', label: 'Team Members' },
+    { icon: '🎯', number: '1+', label: 'Active Projects' },
+    { icon: '🏆', number: '4+', label: 'Competition Wins' },
+    { icon: '⏳', number: '1+', label: 'Year Experience' },
+  ];
 
   return (
+    <>
+    
+   
     <section className="teams-section">
       <div className="teams-header">
         <h2>Teams</h2>
@@ -92,15 +95,18 @@ const Teams = () => {
 
       <button className="view-all-btn">View all Members</button>
 
-      <div className="stats-grid">
+      
+    </section>
+    <div className="stats-grid">
         {stats.map((stat, index) => (
           <div key={index} className="stat-card">
+            <h3 style={{ fontSize: '1.5rem' }}>{stat.icon}</h3>
             <h3>{stat.number}</h3>
             <p>{stat.label}</p>
           </div>
         ))}
       </div>
-    </section>
+    </>
   )
 }
 

@@ -1,6 +1,7 @@
 .gallery-section {
   padding: 5rem 4rem;
   background-color: #f8f9fa;
+  padding-bottom: 0;
 }
 
 .gallery-header {
