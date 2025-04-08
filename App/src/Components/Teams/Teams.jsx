@@ -1,8 +1,69 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Teams.css'
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const Teams = () => {
+  const headerRef = useRef(null)
+  const teamGridRef = useRef(null)
+  const statsRef = useRef(null)
+
+  useGSAP(() => {
+    // Header animation
+    gsap.from(headerRef.current.children, {
+      y: 30,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: headerRef.current,
+        start: 'top 85%',
+        toggleActions: 'play none none none',
+        once: true
+      }
+    })
+
+    // Team cards animation
+    gsap.from('.team-card', {
+      y: 50,
+      opacity: 0,
+      duration: 0.8,
+      stagger: {
+        amount: 0.8,
+        grid: 'auto'
+      },
+      scrollTrigger: {
+        trigger: teamGridRef.current,
+        start: 'top 75%',
+        toggleActions: 'play none none none',
+        once: true
+      }
+    })
+
+    // Stats animation
+    const statsItems = statsRef.current.children
+    gsap.from(statsItems, {
+      scale: 0.8,
+      opacity: 0,
+      duration: 0.6,
+      stagger: 0.15,
+      scrollTrigger: {
+        trigger: statsRef.current,
+        start: 'top 80%',
+        toggleActions: 'play none none none',
+        once: true
+      }
+    })
+
+    // Cleanup
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill())
+    }
+  })
   const teamMembers = [
     {
       name: 'Prabin Basnet',
@@ -66,7 +127,7 @@ const Teams = () => {
     
    
     <section className="teams-section">
-      <div className="teams-header">
+      <div className="teams-header" ref={headerRef}>
         <h2>Teams</h2>
         <p>
           Office touch you must be muted. Meta impact that's recursive solutions graced only value-added web tracked.
@@ -74,7 +135,7 @@ const Teams = () => {
         </p>
       </div>
 
-      <div className="team-grid">
+      <div className="team-grid" ref={teamGridRef}>
         {teamMembers.map((member, index) => (
           <div key={index} className="team-card">
             <img src={member.image} alt={member.name} className="team-member-image" />
@@ -97,7 +158,7 @@ const Teams = () => {
 
       
     </section>
-    <div className="stats-grid">
+    <div className="stats-grid" ref={statsRef}>
         {stats.map((stat, index) => (
           <div key={index} className="stat-card">
             <h3 style={{ fontSize: '1.5rem' }}>{stat.icon}</h3>
