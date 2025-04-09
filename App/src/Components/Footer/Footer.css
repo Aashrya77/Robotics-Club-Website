@@ -10,7 +10,9 @@
 }
 
 .footer-contact {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
 }
 
 .footer-contact h2 {
@@ -24,7 +26,11 @@
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: space-between;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
 }
+
 
 .email-section p {
   color: rgb(48, 47, 47);
@@ -34,8 +40,10 @@
 .email-link {
   color: rgb(48, 47, 47);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
   transition: color 0.3s ease;
+  font-size: 1.5rem;
+
 }
 
 .email-link:hover {
@@ -65,6 +73,8 @@
   margin-bottom: 3rem;
   flex-wrap: wrap;
   gap: 2rem;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
 }
 
 .footer-nav {
@@ -87,6 +97,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  flex-direction: column;
 }
 
 .social-section p {
@@ -97,6 +108,8 @@
 .social-links {
   display: flex;
   gap: 1rem;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
 }
 
 .social-links a {

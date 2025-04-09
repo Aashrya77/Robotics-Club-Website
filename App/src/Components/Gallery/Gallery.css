@@ -1,7 +1,9 @@
 .gallery-section {
   padding: 5rem 4rem;
-  background-color: #f8f9fa;
-  padding-bottom: 0;
+  background-color: var(--background-medium);
+  padding-bottom: .5rem;
+  padding-top: 2.5rem;
+  overflow: hidden;
 }
 
 .gallery-header {
@@ -34,6 +36,8 @@
   overflow: hidden;
   aspect-ratio: 16/9;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
 }
 
 .photo-card img {
@@ -58,7 +62,9 @@
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
 }
 
 .view-gallery-btn:hover {
@@ -70,6 +76,7 @@
   background-color: var(--background-dark);
   padding: 4rem;
   width: 100%;
+  overflow: hidden;
 }
 
 .cta-section h2 {
@@ -100,6 +107,8 @@
   text-decoration: none;
   border-radius: 5px;
   transition: all 0.3s ease;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
 }
 
 .apply-btn {
