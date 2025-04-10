@@ -2,6 +2,7 @@
   width: 100%;
   min-height: 100vh;
   background-color: #f5f5f5;
+  overflow-x: hidden;
 }
 
 .hero-section {
@@ -21,6 +22,8 @@
   max-width: 800px;
   color: white;
   z-index: 1;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
 }
 
 .hero-content h1 {
@@ -51,6 +54,9 @@
 .stat-item {
   text-align: center;
   padding: 0.5rem;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform-origin: center;
 }
 
 .stat-icon {
@@ -87,6 +93,9 @@
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform-origin: center;
 }
 
 .team-card:hover {
