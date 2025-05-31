@@ -123,6 +123,7 @@ const Navbar = () => {
       <div className='nav-button desktop'>
         <Link to='/join' className='join-now'>Join Now</Link>
       </div>
+      
         </div>
      
     </nav>
